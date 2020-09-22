@@ -57,18 +57,18 @@
 			<version>5.2.4</version>
 		</dependency>
 
-		<!--<dependency>
+		<dependency>
 			<groupId>com.graphql-java</groupId>
 			<artifactId>graphiql-spring-boot-starter</artifactId>
 			<version>5.0.2</version>
-		</dependency>-->
+		</dependency>
 
 		<!-- https://mvnrepository.com/artifact/com.graphql-java-kickstart/graphiql-spring-boot-starter -->
-		<dependency>
+		<!--<dependency>
 			<groupId>com.graphql-java-kickstart</groupId>
 			<artifactId>graphiql-spring-boot-starter</artifactId>
 			<version>7.1.0</version>
-		</dependency>
+		</dependency>-->
 
 	</dependencies>
 
