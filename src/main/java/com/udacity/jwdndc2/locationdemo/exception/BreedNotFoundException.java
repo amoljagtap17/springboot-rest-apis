@@ -8,13 +8,13 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class DogNotFoundException extends RuntimeException implements GraphQLError {
+public class BreedNotFoundException extends RuntimeException implements GraphQLError {
 
     private Map<String, Object> extensions = new HashMap<>();
 
-    public DogNotFoundException(String message, Long invalidDogId) {
+    public BreedNotFoundException(String message, String invalidBreed) {
         super(message);
-        extensions.put("invalidDogId", invalidDogId);
+        extensions.put("invalidBreedId", invalidBreed);
     }
 
     @Override

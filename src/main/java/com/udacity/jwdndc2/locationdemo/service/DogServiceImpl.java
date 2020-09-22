@@ -1,7 +1,7 @@
 package com.udacity.jwdndc2.locationdemo.service;
 
 import com.udacity.jwdndc2.locationdemo.entity.Dog;
-import com.udacity.jwdndc2.locationdemo.exception.DogNotFoundException;
+import com.udacity.jwdndc2.locationdemo.exception.DogNotFoundExceptionRest;
 import com.udacity.jwdndc2.locationdemo.repository.DogRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -24,7 +24,7 @@ public class DogServiceImpl implements DogService {
 
     public String retrieveDogBreedById(Long id) {
         Optional<String> optionalBreed = Optional.ofNullable(dogRepository.findBreedById(id));
-        String breed = optionalBreed.orElseThrow(DogNotFoundException::new);
+        String breed = optionalBreed.orElseThrow(DogNotFoundExceptionRest::new);
         return breed;
     }
 
